@@ -1,0 +1,22 @@
+body.shimmer-background {
+  margin: 0;
+  padding: 0;
+  color: #fff5cc;
+  font-family: Georgia, serif;
+
+  /* HERE IS WHERE YOU ADD YOUR BACKGROUND IMAGE */
+  background-image: url('your-forest-image.jpg');  
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* ADDING SHIMMERING OVERLAY */
+  position: relative;
+  overflow: hidden;
+}
+
+body.shimmer-background::after {
+  content: '';
+  position: absolute;
+  top: 0; 
+  l
