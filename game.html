@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Wildwomaniya Magic Machine">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Wildwomaniya Magic Machine</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        color: #fff5cc;
+        background: #5e466e;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        color: #ffcccb;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #fff5cc;
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        background: #ffcccb;
+        color: #5e466e;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Wildwomaniya Magic Machine</h1>
+    <p>Click to unveil your magic message for today.</p>
+
+    <button id="magicBtn">Get Magic</button>
+    <p id="magicMsg">...</p>
+
+    <script>
+      const messages = [
+        "Release what's holding you back.",
+        "Embrace your magic today.",
+        "Your path is clearing.",
+        "Seek guidance within.",
+        "Rest and renewal are your magic today."
+      ];
+
+      document.getElementById("magicBtn").addEventListener("click", () => {
+        const msg = messages[Math.floor(Math.random() * messages.length)];
+        document.getElementById("magicMsg").innerHTML = msg;
+      });
+    </script>
+
+    <ul>
+      <li><a href="./index.html">Back to Home</a></li>
+    </ul>
+
+  </body>
+</html>
