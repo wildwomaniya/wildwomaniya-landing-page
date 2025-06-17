@@ -8,26 +8,30 @@
     margin: 0;
     font-family: Arial, sans-serif;
     color: #fff;
-    background: linear-gradient(45deg, #ff7675, #fdcb6e, #55efc4, #81ecec, #74b9ff, #a29bfe, #e84393);
-    background-size: 400% 400%;
-    animation: rainbow 15s ease infinite;
     padding: 20px;
+
+    background: #2c003e;
+    background-image: radial-gradient(circle at 20% 20%, #fff7cc 0%, #ffcc80 20%, #ffb74d 40%, #ff9800 60%, #ff7043 80%), 
+      radial-gradient(circle at 80% 80%, #fff7cc 0%, #ffcc80 20%, #ffb74d 40%, #ff9800 60%, #ff7043 80%);
+    background-size: 200% 200%;
+    animation: liquidSwirl 20s ease infinite;
   }
 
-  @keyframes rainbow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  @keyframes liquidSwirl {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
   }
 
   h1, h2 {
-    color: #fff;
-    text-shadow: 2px 2px #000000;
+    color: #fff7cc;
+    text-shadow: 2px 2px #ffcc80;
+    margin-bottom: 20px;
   }
 
   ul {
-    background: #fff;
-    color: #000;
+    background: #fff7cc;
+    color: #2c003e;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 14px rgb(0 0 0 / 0.5);
@@ -37,6 +41,12 @@
 
   ul li {
     margin-bottom: 10px;
+  }
+
+  p {
+    color: #fff7cc;
+    max-width: 500px;
+    margin-bottom: 20px;
   }
 </style>
 </head>
